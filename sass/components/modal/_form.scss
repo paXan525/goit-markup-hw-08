@@ -1,0 +1,43 @@
+.form {
+    width: 448px;
+}
+
+.form__title {
+    display: block;
+    margin-bottom: 12px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--link-base-color);
+}
+
+.form__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+
+    transition: fill var(--transition);
+
+    &:hover,
+    &:focus-within {
+        fill: var(--form-icon-active-color)
+    }
+}
+
+.form__field:nth-child(5) {
+    margin-bottom: 20px;
+}
+
+.subscribe__form {
+    display: flex;
+    width: 570px;
+}
+
+

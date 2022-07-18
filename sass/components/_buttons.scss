@@ -1,0 +1,86 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 200px;
+    height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--text-white-color);
+    background: var(--link-active-color);
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+
+    cursor: pointer;
+    transition: background var(--transition);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--background-btn-active-color);}
+}
+
+.filters__button {
+    padding: 6px 22px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--link-base-color);
+    text-align: center;
+
+    background-color: var(--background-button-color);
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: color var(--transition), background-color var(--transition), box-shadow var(--transition);
+
+        &:hover,
+        &:focus {
+            color: var(--text-white-color);
+        
+            background-color: var(--link-active-color);
+            box-shadow: var(--portfolio-filters-item-shadow);
+            }
+}
+
+
+
+.button__close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: #ffffff;
+
+    transition: fill var(--transition);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        fill: #2196f3;}
+}
+
+
+

@@ -1,0 +1,58 @@
+:root {
+    /* fonts */
+    --main-font: 'Roboto';
+    --secondary-font: 'Raleway';
+
+    /* text color */
+    --primary-text-color: #757575;
+    --title-text-color: #000000;
+    --link-base-color: #212121;
+    --text-white-color: #ffffff;
+    --link-active-color: #2196f3;
+    --footer-contact-color: rgba(255, 255, 255, 0.6);
+    --subscribe-text-color: rgba(255, 255, 255, 0.6);
+
+    /* gradient */
+    --hero-linear-gradient: rgba(47, 48, 58, 0.4);
+
+    /* icon color */
+    --team-icon-color: #afb1b8;
+    --team-icon-focus-color: #ffffff;
+    --clients-color: #afb1b8;
+    --clients-focus-color: #188ce8;
+    --footer-icon-color: #ffffff;
+    --form-icon-active-color: #2196f3;
+
+    /* background-color */
+    --background-white-color: #ffffff;
+    --background-secondary-color: #2f303a;
+    --background-btn-active-color: #188ce8;
+    --background-button-color: #f5f4fa;
+    --team-icon-focus-bg: #2196f3;
+    --about-subtitle-bg:rgba(47, 48, 58, 0.8);
+    --footer-icon-bg: rgba(255, 255, 255, 0.1);
+    --footer-icon-focus-bg: #2196f3;
+    --overlay-bg: rgba(33, 150, 243, 0.9);
+
+    /* border-color */
+    --header-border-color: #ececec;
+    --portfolio-border-color: #eeeeee;
+    --clients-border-color: #afb1b8;
+    --clients-border-focus-color: #188ce8;
+    --form-border-active-color: #2196f3;
+    --team-item-border: 0px 0px 4px 4px;
+
+    /* box-shadow */
+    --hero-button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    --team-item-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    --portfolio-filters-item-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    --portfolio-projects-item-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    /* others */
+    --items: 3;
+    --indent: 30px;
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

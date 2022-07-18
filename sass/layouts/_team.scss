@@ -1,0 +1,47 @@
+.team {
+    @extend %section;
+
+    text-align: center;
+
+    background-color: var(--background-button-color);
+}
+
+.team__title {
+    margin-bottom: 50px;
+}
+
+.team__list {
+    --items: 4;
+}
+
+.team__item {
+    width: 270px;
+
+    background-color: var(--background-white-color);
+    border-radius: var(--team-item-border);
+    box-shadow: var(--team-item-shadow);
+}
+
+.meta {
+    padding: 30px 0;
+
+    text-align: center;
+}
+
+.meta__name {
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--link-base-color);
+    text-align: center;
+}
+
+.meta__job {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
