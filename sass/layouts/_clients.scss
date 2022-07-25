@@ -1,31 +1,25 @@
 .clients {
     @extend %section;
-
-    text-align: center;
-}
-
-.clients__title {
-    margin-bottom: 50px;
 }
 
 .clients__list {
-    display: flex;
-}
-
-.clients__items {
-    margin-right: 30px;
-}
-
-.clients__items:last-child {
-    margin-right: 0;
+    --items: 2;
+    
+    @media screen and (min-width: 768px) {
+    --items: 3;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    --items: 6;
+    }
 }
 
 .clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
+    max-width: 100%;
+    padding: 16px 0;
 
     color: var(--clients-color);
 

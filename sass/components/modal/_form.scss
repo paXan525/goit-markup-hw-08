@@ -1,5 +1,5 @@
 .form {
-    width: 448px;
+    width: 100%;
 }
 
 .form__title {
@@ -36,8 +36,12 @@
 }
 
 .subscribe__form {
+
+    @media screen and (min-width: 1200px) {
     display: flex;
     width: 570px;
+    }
+    
 }
 
 

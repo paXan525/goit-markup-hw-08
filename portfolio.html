@@ -18,9 +18,17 @@
 
   <body>
     <header class="header">
-      <div class="container header__nav">
+      <div class="container header__container">
+        <a class="logo header__logo" href="./index.html"
+          >Web<span class="logo__text--black">Studio</span></a
+        >
+        <button class="mobile-menu__btn" type="button" data-menu-button>
+          <svg class="mobile-menu__icon" width="24" height="16">
+            <use class="mobile-menu__burger" href="./images/icons.svg#burger-menu"></use>
+            <use class="mobile-menu__close" href="./images/icons.svg#menu-close"></use>
+          </svg>
+        </button>
         <nav class="nav header__nav">
-          <a class="logo" href="./index.html">Web<span class="logo__text--black">Studio</span></a>
           <ul class="nav__list list">
             <li class="nav__item">
               <a class="nav__link" href="./index.html">Студия</a>
@@ -77,13 +85,63 @@
             <li class="portfolio__item card-set__item">
               <a class="portfolio__link" href="#">
                 <div class="product">
-                  <img
-                    class="product__img img"
-                    src="./images/img_8.jpg"
-                    alt="ноутбук_с_открытой_веб-страницей"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1_lg.webp    1x,
+                        ./images/portfolio/img-1_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-1_lg.jpg    1x,
+                        ./images/portfolio/img-1_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1_md.webp    1x,
+                        ./images/portfolio/img-1_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-1_md.jpg    1x,
+                        ./images/portfolio/img-1_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1_sm.webp    1x,
+                        ./images/portfolio/img-1_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-1_sm.jpg    1x,
+                        ./images/portfolio/img-1_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="product__img img"
+                      src="./images/portfolio/img-1_sm.jpg"
+                      alt="ноутбук_с_открытой_веб-страницей"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="product__overlay">
                     <div class="product__description">
                       <p class="product__text">
@@ -103,13 +161,63 @@
             <li class="portfolio__item card-set__item">
               <a class="portfolio__link" href="#">
                 <div class="product">
-                  <img
-                    class="product__img img"
-                    src="./images/img_9.jpg"
-                    alt="постер_New_Orlean_vs_Golden_Star"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2_lg.webp    1x,
+                        ./images/portfolio/img-2_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-2_lg.jpg    1x,
+                        ./images/portfolio/img-2_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2_md.webp    1x,
+                        ./images/portfolio/img-2_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-2_md.jpg    1x,
+                        ./images/portfolio/img-2_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2_sm.webp    1x,
+                        ./images/portfolio/img-2_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-2_sm.jpg    1x,
+                        ./images/portfolio/img-2_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="product__img img"
+                      src=".images/portfolio/img-2_sm.jpg"
+                      alt="постер_New_Orlean_vs_Golden_Star"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="product__overlay">
                     <div class="product__description">
                       <p class="product__text">
@@ -129,13 +237,63 @@
             <li class="portfolio__item card-set__item">
               <a class="portfolio__link" href="#">
                 <div class="product">
-                  <img
-                    class="product__img img"
-                    src="./images/img_10.jpg"
-                    alt="логотип_ресторана_Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3_lg.webp    1x,
+                        ./images/portfolio/img-3_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-3_lg.jpg    1x,
+                        ./images/portfolio/img-3_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3_md.webp    1x,
+                        ./images/portfolio/img-3_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-3_md.jpg    1x,
+                        ./images/portfolio/img-3_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3_sm.webp    1x,
+                        ./images/portfolio/img-3_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-3_sm.jpg    1x,
+                        ./images/portfolio/img-3_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="product__img img"
+                      src="./images/portfolio/img-3_sm.jpg"
+                      alt="логотип_ресторана_Seafood"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="product__overlay">
                     <div class="product__description">
                       <p class="product__text">
@@ -155,13 +313,63 @@
             <li class="portfolio__item card-set__item">
               <a class="portfolio__link" href="#">
                 <div class="product">
-                  <img
-                    class="product__img img"
-                    src="./images/img_11.jpg"
-                    alt="накладные_наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4_lg.webp    1x,
+                        ./images/portfolio/img-4_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-4_lg.jpg    1x,
+                        ./images/portfolio/img-4_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4_md.webp    1x,
+                        ./images/portfolio/img-4_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-4_md.jpg    1x,
+                        ./images/portfolio/img-4_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4_sm.webp    1x,
+                        ./images/portfolio/img-4_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-4_sm.jpg    1x,
+                        ./images/portfolio/img-4_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="product__img img"
+                      src="./images/portfolio/img-4_sm.jpg"
+                      alt="накладные_наушники"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="product__overlay">
                     <div class="product__description">
                       <p class="product__text">
@@ -181,13 +389,63 @@
             <li class="portfolio__item card-set__item">
               <a class="portfolio__link" href="#">
                 <div class="product">
-                  <img
-                    class="product__img img"
-                    src="./images/img_12.jpg"
-                    alt="две_коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5_lg.webp    1x,
+                        ./images/portfolio/img-5_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-5_lg.jpg    1x,
+                        ./images/portfolio/img-5_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5_md.webp    1x,
+                        ./images/portfolio/img-5_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-5_md.jpg    1x,
+                        ./images/portfolio/img-5_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5_sm.webp    1x,
+                        ./images/portfolio/img-5_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-5_sm.jpg    1x,
+                        ./images/portfolio/img-5_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="product__img img"
+                      src="./images/portfolio/img-5_sm.jpg"
+                      alt="две_коробки"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="product__overlay">
                     <div class="product__description">
                       <p class="product__text">
@@ -207,13 +465,63 @@
             <li class="portfolio__item card-set__item">
               <a class="portfolio__link" href="#">
                 <div class="product">
-                  <img
-                    class="product__img img"
-                    src="./images/img_13.jpg"
-                    alt="монитор_Apple"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6_lg.webp    1x,
+                        ./images/portfolio/img-6_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-6_lg.jpg    1x,
+                        ./images/portfolio/img-6_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6_md.webp    1x,
+                        ./images/portfolio/img-6_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-6_md.jpg    1x,
+                        ./images/portfolio/img-6_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6_sm.webp    1x,
+                        ./images/portfolio/img-6_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-6_sm.jpg    1x,
+                        ./images/portfolio/img-6_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="product__img img"
+                      src="./images/portfolio/img-6_sm.jpg"
+                      alt="монитор_Apple"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="product__overlay">
                     <div class="product__description">
                       <p class="product__text">
@@ -233,13 +541,63 @@
             <li class="portfolio__item card-set__item">
               <a class="portfolio__link" href="#">
                 <div class="product">
-                  <img
-                    class="product__img img"
-                    src="./images/img_14.jpg"
-                    alt="открытая_книга"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7_lg.webp    1x,
+                        ./images/portfolio/img-7_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-7_lg.jpg    1x,
+                        ./images/portfolio/img-7_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7_md.webp    1x,
+                        ./images/portfolio/img-7_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-7_md.jpg    1x,
+                        ./images/portfolio/img-7_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7_sm.webp    1x,
+                        ./images/portfolio/img-7_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-7_sm.jpg    1x,
+                        ./images/portfolio/img-7_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="product__img img"
+                      src="./images/portfolio/img-7_sm.jpg"
+                      alt="открытая_книга"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="product__overlay">
                     <div class="product__description">
                       <p class="product__text">
@@ -259,13 +617,63 @@
             <li class="portfolio__item card-set__item">
               <a class="portfolio__link" href="#">
                 <div class="product">
-                  <img
-                    class="product__img img"
-                    src="./images/img_15.jpg"
-                    alt="бирка"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8_lg.webp    1x,
+                        ./images/portfolio/img-8_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-8_lg.jpg    1x,
+                        ./images/portfolio/img-8_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8_md.webp    1x,
+                        ./images/portfolio/img-8_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-8_md.jpg    1x,
+                        ./images/portfolio/img-8_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8_sm.webp    1x,
+                        ./images/portfolio/img-8_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-8_sm.jpg    1x,
+                        ./images/portfolio/img-8_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="product__img img"
+                      src="./images/portfolio/img-8_sp.jpg"
+                      alt="бирка"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="product__overlay">
                     <div class="product__description">
                       <p class="product__text">
@@ -285,13 +693,63 @@
             <li class="portfolio__item card-set__item">
               <a class="portfolio__link" href="#">
                 <div class="product">
-                  <img
-                    class="product__img img"
-                    src="./images/img_16.jpg"
-                    alt="человек_работает_за_ноутбуком"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9_lg.webp    1x,
+                        ./images/portfolio/img-9_lg@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/portfolio/img-9_lg.jpg    1x,
+                        ./images/portfolio/img-9_lg@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9_md.webp    1x,
+                        ./images/portfolio/img-9_md@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/portfolio/img-9_md.jpg    1x,
+                        ./images/portfolio/img-9_md@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-9_sm.webp    1x,
+                        ./images/portfolio/img-9_sm@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./images/portfolio/img-9_sm.jpg    1x,
+                        ./images/portfolio/img-9_sm@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                    />
+                    <img
+                      class="product__img img"
+                      src="./images/portfolio/img-9_sm.jpg"
+                      alt="человек_работает_за_ноутбуком"
+                      width="450"
+                      height="294"
+                    />
+                  </picture>
                   <div class="product__overlay">
                     <div class="product__description">
                       <p class="product__text">
@@ -316,58 +774,60 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__box">
-          <a class="logo footer__logo" href="./index.html"
-            >Web<span class="logo__text--white">Studio</span></a
-          >
-          <address class="contact">
-            <ul class="contact__list list">
-              <li class="contact__item">
-                <a
-                  class="contact__address"
-                  href="https://goo.gl/maps/8b87fUh3uZsaHk5C8"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  г.Киев, пр-т Леси Украинки,26
-                </a>
+          <div class="footer__contact">
+            <a class="logo footer__logo" href="./index.html"
+              >Web<span class="logo__text--white">Studio</span></a
+            >
+            <address class="contact">
+              <ul class="contact__list list">
+                <li class="contact__item">
+                  <a
+                    class="contact__address"
+                    href="https://goo.gl/maps/8b87fUh3uZsaHk5C8"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    г.Киев, пр-т Леси Украинки,26
+                  </a>
+                </li>
+                <li class="contact__item">
+                  <a class="contact__link" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="contact__item">
+                  <a class="contact__link" href="tel:+380991111111">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social footer__social">
+            <b class="social__title">присоединяйтесь</b>
+            <ul class="social__list list">
+              <li class="social__item">
+                <a class="social__link social__link--mode-dark" href="#" aria-label="instagram"
+                  ><svg class="social__icon social__icon--mode-dark" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use></svg
+                ></a>
               </li>
-              <li class="contact__item">
-                <a class="contact__link" href="mailto:info@example.com">info@example.com</a>
+              <li class="social__item">
+                <a class="social__link social__link--mode-dark" href="#" aria-label="twitter"
+                  ><svg class="social__icon social__icon--mode-dark" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use></svg
+                ></a>
               </li>
-              <li class="contact__item">
-                <a class="contact__link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="social__item">
+                <a class="social__link social__link--mode-dark" href="#" aria-label="facebook"
+                  ><svg class="social__icon social__icon--mode-dark" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use></svg
+                ></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--mode-dark" href="#" aria-label="linkedin"
+                  ><svg class="social__icon social__icon--mode-dark" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social footer__social">
-          <b class="social__title">присоединяйтесь</b>
-          <ul class="social__list list">
-            <li class="social__item">
-              <a class="social__link social__link--mode-dark" href="#" aria-label="instagram"
-                ><svg class="social__icon social__icon--mode-dark" width="20" height="20">
-                  <use href="./images/icons.svg#instagram"></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--mode-dark" href="#" aria-label="twitter"
-                ><svg class="social__icon social__icon--mode-dark" width="20" height="20">
-                  <use href="./images/icons.svg#twitter"></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--mode-dark" href="#" aria-label="facebook"
-                ><svg class="social__icon social__icon--mode-dark" width="20" height="20">
-                  <use href="./images/icons.svg#facebook"></use></svg
-              ></a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--mode-dark" href="#" aria-label="linkedin"
-                ><svg class="social__icon social__icon--mode-dark" width="20" height="20">
-                  <use href="./images/icons.svg#linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscribe">
           <b class="subscribe__title">Подпишитесь на рассылку</b>
@@ -391,5 +851,48 @@
         </div>
       </div>
     </footer>
+    <!-- Мобільне меню -->
+    <div class="mobile-menu" data-menu>
+      <ul class="mobile-menu__nav list">
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link link" href="./index.html">Студия</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a
+            class="mobile-menu__nav-link mobile-menu__nav-link--current link"
+            href="./portfolio.html"
+            >Портфолио</a
+          >
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__contacts list">
+        <li class="mobile-menu__contacts-item">
+          <a class="mobile-menu__mail-link link" href="mailto:info@example.com"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-menu__contacts-item">
+          <a class="mobile-menu__tel-link link" href="tel:+380991111111">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials list">
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link link" href="#">Facebook</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

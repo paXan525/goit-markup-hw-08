@@ -6,17 +6,36 @@
 }
 
 .footer__container {
+    @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: baseline;
+    }
 }
 
 .footer__box {
-    width: 231px;
-    margin-right: 70px;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    }
+}
+
+
+.footer__contact {
+    margin-bottom: 60px;
+
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+        width: 231px;
+        margin-right: 70px;
+        margin-bottom: 0px;
+    }
+    
+    
 }
 
 .contact__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .contact__address {
@@ -50,7 +69,15 @@
 }
 
 .footer__social {
+    margin-bottom: 60px;
+
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
     margin-right: 94px;
+    margin-bottom: 0px;
+    }
+    
 }
 
 .social__title {
@@ -64,6 +91,10 @@
     text-transform: uppercase;
 }
 
+.subscribe {
+    text-align: center;
+}
+
 .subscribe__title {
     display: block;
     margin-bottom: 20px;
@@ -73,4 +104,12 @@
     line-height: 1.14;
     color: var(--text-white-color);
     text-transform: uppercase;
+}
+
+.subscribe__button {
+    margin-top: 20px;
+
+    @media screen and (min-width: 1200px) {
+    margin-top: 0px;
+    }
 }
