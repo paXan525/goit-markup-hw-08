@@ -1276,7 +1276,7 @@ p {
 }
 
 .subscribe__title {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
